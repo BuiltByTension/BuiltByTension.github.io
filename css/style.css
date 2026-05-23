@@ -365,9 +365,13 @@ footer {
 
 .footer-logo span { color: var(--accent); }
 
-.footer-links { display: flex; gap: 2rem; }
+.footer-links { display: flex; gap: 2rem; flex-wrap: wrap; }
 .footer-links a { font-size: 0.82rem; color: var(--muted); text-decoration: none; transition: color 0.2s; }
-.footer-links a:hover { color: var(--text); }
+.footer-links a:hover { color: var(--accent); }
+
+.footer-socials { display: flex; gap: 1.25rem; }
+.footer-socials a { font-size: 0.82rem; color: var(--muted); text-decoration: none; font-weight: 600; letter-spacing: 0.04em; transition: color 0.2s; }
+.footer-socials a:hover { color: var(--accent); }
 
 .footer-copy { font-size: 0.78rem; color: var(--muted); }
 
