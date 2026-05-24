@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>TikTok Auth</title></head>
+<body>
+<h2>Authorization Code</h2>
+<p id="code"></p>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get('code');
+  if (code) {
+    document.getElementById('code').innerHTML = '<strong>Copy this code and paste it into the terminal:</strong><br><br><code style="font-size:14px;word-break:break-all">' + code + '</code>';
+  } else {
+    document.getElementById('code').textContent = 'No code found. Something went wrong.';
+  }
+</script>
+</body>
+</html>
