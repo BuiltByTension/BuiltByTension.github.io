@@ -123,6 +123,15 @@ nav {
 
 .btn-primary:hover { background: var(--accent2); transform: translateY(-2px); }
 
+.hero-cred {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+
 .hero-note {
   margin-top: 1rem;
   font-size: 0.8rem;
@@ -187,6 +196,200 @@ section { padding: 6rem 2rem; }
   content: '— ';
   color: var(--accent);
   font-weight: 700;
+}
+
+/* ── COACH ── */
+.coach {
+  background: var(--bg-2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.coach-inner {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.coach-photo-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.coach-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coach-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.photo-initials {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  color: var(--accent);
+  opacity: 0.4;
+}
+
+.coach-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.3rem 0.7rem;
+}
+
+.coach-bio h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.coach-bio h2 em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.coach-bio p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.coach-stats {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.coach-stats li {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.coach-stats li strong {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+}
+
+.coach-stats li span {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* ── TESTIMONIALS ── */
+.testimonials {
+  background: var(--bg-3);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.testimonials h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.testimonials h2 em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.testimonial-card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.testimonial-text::before {
+  content: '\201C';
+  color: var(--accent);
+  font-size: 1.5rem;
+  line-height: 0;
+  vertical-align: -0.4rem;
+  margin-right: 0.15rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.author-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.author-tag {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
 }
 
 /* ── SYSTEM ── */
@@ -283,6 +486,50 @@ blockquote {
 
 .quote-attr { font-size: 0.85rem; color: rgba(255,255,255,0.65); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
 
+/* ── PROOF ── */
+.proof {
+  background: var(--bg-2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.proof h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.proof h2 em { font-style: normal; color: var(--accent); }
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.proof-card {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.75rem;
+}
+
+.proof-icon {
+  display: block;
+  color: var(--accent);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.proof-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.proof-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+
 /* ── PRICING ── */
 .pricing { background: var(--bg); }
 
@@ -294,6 +541,7 @@ blockquote {
 }
 
 .pricing-intro { color: var(--muted); max-width: 480px; margin-bottom: 3rem; }
+.pricing-footnote { font-size: 0.85rem; color: var(--muted); }
 
 .pricing-cards {
   display: grid;
@@ -376,6 +624,13 @@ footer {
 .footer-copy { font-size: 0.78rem; color: var(--muted); }
 
 /* ── RESPONSIVE ── */
+@media (max-width: 860px) {
+  .coach-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .coach-photo-placeholder, .coach-img { aspect-ratio: 4/3; max-width: 400px; }
+  .coach-badges { flex-direction: row; flex-wrap: wrap; }
+  .proof-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 680px) {
   nav { padding: 1rem 1.25rem; }
   section { padding: 4rem 1.25rem; }
