@@ -136,8 +136,22 @@ nav {
   position: absolute;
   inset: 0;
   border-radius: 8px;
-  background: linear-gradient(180deg, rgba(14,14,14,0) 55%, rgba(14,14,14,0.55) 100%);
+  background: linear-gradient(180deg, rgba(14,14,14,0) 50%, rgba(14,14,14,0.7) 100%);
   pointer-events: none;
+}
+
+.photo-caption {
+  position: absolute;
+  left: 14px;
+  bottom: 12px;
+  right: 14px;
+  z-index: 2;
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  font-style: italic;
+  color: rgba(255,255,255,0.92);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.85);
 }
 
 .hero-scarcity {
@@ -372,6 +386,19 @@ section { padding: 6rem 2rem; }
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.coach-photo {
+  position: relative;
+}
+
+.coach-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  background: linear-gradient(180deg, rgba(14,14,14,0) 55%, rgba(14,14,14,0.7) 100%);
+  pointer-events: none;
 }
 
 .coach-img {
@@ -784,7 +811,7 @@ footer {
 @media (max-width: 980px) {
   .hero { padding: 7rem 2rem 4rem; }
   .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .hero-photo { order: -1; max-width: 380px; margin: 0 auto; }
+  .hero-photo { order: 2; max-width: 380px; margin: 1.5rem auto 0; }
   .hero-img { aspect-ratio: 3/4; object-position: center top; }
 }
 
